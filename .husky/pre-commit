@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Lint all staged files (or all packages)
+pnpm lint
+pnpm format --check
